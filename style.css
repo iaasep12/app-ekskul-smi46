@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+    --white: #fff;
+    --cool-gray:#111827;
+    --dribble:#EA4C89;
+    --text-utama:#1c2b2d;
+    --text-second: #222831;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: url(img/keyboards.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-content img{
+    height: 200px;
+    width: 200px;
+    margin:0px auto;
+    margin-top: -70px;
+}
+
+.bulat1{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin: 0px auto;
+    background:linear-gradient(rgb(253, 249, 252), rgb(245, 9, 166));
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    position: absolute;
+    opacity: .3;
+    animation: animate1 10s linear infinite;
+    filter: blur(10px);
+}
+
+.bulat5{
+    position: absolute;
+    margin-left: 100px;
+    height: 80px;
+    width: 80px;
+    margin: 0px auto;
+    background:#36eee0;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    opacity: .3;
+    animation: animate1 15s linear infinite;
+    filter: blur(10px);
+}
+
+.bulat2{
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #0f0;
+    transform: translateZ(-380px);
+    filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);  
+    backdrop-filter: blur(10px);
+    animation: animate1 10s linear infinite;
+    opacity: .3;
+}
+
+.bulat2{
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    margin-left: 50px;
+    width: 60px;
+    height: 60px;
+    background: #0f0;
+    transform: translateZ(-380px);
+    filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);  
+    backdrop-filter: blur(10px);
+    animation: animate1 13s linear infinite;
+    opacity: .3;
+}
+
+.bulat3{
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: #ffab00;
+    transform: translateZ(-380px);
+    filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);  
+    backdrop-filter: blur(10px);
+    animation: animate1 10s linear infinite;
+    opacity: .3;
+}
+
+.bulat4{
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: #ffab00;
+    transform: translateZ(-380px);
+    filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);  
+    backdrop-filter: blur(10px);
+    animation: animate1 18s linear infinite;
+    opacity: .3;
+}
+
+.bulat6{
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    background: #36eee0;
+    transform: translateZ(-380px);
+    filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);  
+    backdrop-filter: blur(10px);
+    animation: animate1 16s linear infinite;
+    opacity: .3;
+}
+
+.bulat7{
+    position: absolute;
+    height: 30px;
+    left: 0;
+    right: 0;
+    width: 30px;
+    background:linear-gradient(rgb(253, 249, 252), rgb(245, 9, 166));
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    position: absolute;
+    opacity: .3;
+    animation: animate1 14s linear infinite;
+    filter: blur(10px);
+}
+
+.bulat8{
+    position: absolute;
+    height: 100px;
+    right: 0;
+    width: 100px;
+    background:linear-gradient(rgb(253, 249, 252), rgb(167, 248, 6));
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    position: absolute;
+    opacity: .3;
+    animation: animate1 14s linear infinite;
+    filter: blur(10px);
+}
+
+.nav-content::before {
+    content: '';
+    position: absolute;
+    margin-left: 600px;
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    opacity: .3;
+    background: #0f0;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    filter: blur(20px);
+    animation: animate1 10s linear infinite;
+
+    box-shadow: 0 0 120px rgba(0,255,0,0.2),
+    0 0 200px rgba(0,255,0,0.4),
+    0 0 300px rgba(0,255,0,0.6),
+    0 0 400px rgba(0,255,0,0.8),
+    0 0 500px rgba(0,255,0,1);    
+}
+
+.nav-content::after {
+    content: '';
+    position: absolute;
+    margin-left: 300px;
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #ffab00;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    filter: blur(20px);
+    animation: animate1 8s linear infinite;
+
+    box-shadow: 0 0 120px rgba(0,255,0,0.2),
+    0 0 200px rgba(0,255,0,0.4),
+    0 0 300px rgba(0,255,0,0.6),
+    0 0 400px rgba(0,255,0,0.8),
+    0 0 500px rgba(0,255,0,1);    
+}
+
+@keyframes animate1
+{
+    0%
+    {
+        margin-top: 0%;
+
+    }
+    50%
+    {
+        margin-top: 100%;
+    }
+    100%
+    {
+        margin-top: 0%;
+    }
+}
+
+.nav-content h4{
+    margin: auto;
+    z-index: 2;
+    color: white;
+}
+
+main{
+    position: absolute;
+    z-index: -9999;
+    margin-top: -50px;
+    background-attachment: fixed;
+    background-color: var(--cool-gray);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120vmax;
+    width: 100%;
+    background-size:cover;
+    opacity: .8;
+}
+
+.container{
+    position: relative;
+    max-width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    overflow: hidden;
+    background-color: var(--dribble);
+    margin: 0px auto;
+    border-radius: 8px;
+    z-index: 9999;
+}
+
+.container h6{
+    color: var(--text-utama);
+}
+
+nav h2{
+    color: var(--text-utama);
+}
+
+fieldset{
+    background-color: var(--white);
+}
+
+legend{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--cool-gray);
+}
+
+.btn{
+    background-color: var(--cool-gray);
+    color: var(--white);
+}
+
+.nama{
+    margin-top: -35px;
+}
