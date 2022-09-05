@@ -7,13 +7,13 @@
 
     <!-- Bootstrap CSS -->
     <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>App Ekskul SMI46</title>
+    <title>Ekskul ProDes</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <main></main>
         <nav class="nav-content mt-5 mb-3">
-            <img src="img/smi 46.png" alt="">
+            <img src="image/smi 46.png" alt="">
             <div class="bulat1"></div>
             <div class="bulat2"></div>
             <div class="bulat3"></div>
@@ -36,8 +36,21 @@
                 <div class="mb-2">
                     <label for="class" class="form-label text-white">Kelas</label>
                     <input type="text" class="form-control" id="class" aria-describedby="name" 
-                    placeholder="isi nama kelas" name="kelas">
+                    placeholder="isi nama kelas" name="kelas" required>
                 </div>
+                <div class="form-flex mb-3">
+                    <h6 class="jl text-white">Jenis Kelamin</h6>
+                    <fieldset class="rounded-3 p-3">
+                        <label>
+                            <input type="radio" name="jenis_kelamin" id="laki-laki" value="laki-laki" selected>
+                            Laki-laki
+                        </label>
+                        <label>
+                            <input type="radio" name="jenis_kelamin" id="perempuan" value="perempuan">
+                            Perempuan
+                        </label>
+                    </fieldset>
+                </div>  
                 <div class="form-flex mb-3">
                     <label for="minggu" class="text-white">Ekskul Yang diikuti</label>
                     <select class="form-select" id="jenis_ekskul" name="jenis_ekskul"
@@ -49,7 +62,7 @@
                 
                 <div class="mb-2">
                     <label for="month" class="form-label text-white">Bulan</label>
-                    <input type="month" class="form-control" id="month" name="bulan" placeholder="isi bulan yang sedang berjalan">            
+                    <input type="month" class="form-control" id="month" name="bulan" placeholder="isi bulan yang sedang berjalan" required>            
                 </div>
                 <div class="text-white form-flex mb-3">
                     <label for="minggu">Pertemuan Minggu Ke-</label>
