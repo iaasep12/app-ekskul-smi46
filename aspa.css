@@ -1,104 +1,232 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>desainProgram - Ekskul SMI 46</title>
+    <!-- Icon -->
+    <link
+      rel="icon"
+      href="image/smi 46.png"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- MDB UI KIT -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="aspa.css">
+  </head>
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+  <body>
+    <!--Main Navigation-->
+    <header class="mb-10">
+      <!-- Navbar-->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white shadow-2 fixed-top"
+      >
+        <div
+          class="
+            container-fluid
+            justify-content-center justify-content-md-between
+          "
+        >
+          <!-- Left elements -->
+          <ul class="navbar-nav flex-row align-items-center">
+            <li class="nav-item me-3 me-lg-1">
+              <a
+                class="nav-link d-flex"
+                href="http://aliyahmuhajirin.sch.id/"
+                target="_blank"
+              >
+                <img
+                  src="image/smi 46.png"
+                  height="65"
+                  alt=""
+                  loading="lazy"
+                  class="me-2"
+                />
+                <span
+                  style="
+                    font-size: 19px;
+                    font-weight: 500;
+                    color: hsl(0, 0%, 30%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                  >SMI<span class="text-theme text-success">46 Al-Muhajirin</span></span
+                >
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-1">
+              <a
+                class="nav-link"
+                href="https://www.instagram.com/accounts/login/?next=/sekolahintegrasiilmu"
+                rel="nofollow"
+                target="_blank"
+              >
+                <span><i class="fab fa-instagram"></i></span>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-1">
+              <a
+                class="nav-link"
+                href="https://www.youtube.com/channel/UCzM_Jh3dL6GvrogVLRB7ynA"
+                rel="nofollow"
+                target="_blank"
+              >
+                <span><i class="fab fa-youtube"></i></span>
+              </a>
+            </li>
+          </ul>
+          <!-- Left elements -->
 
-body{
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    background: #f9f9f9;
-}
+          <!-- Center elements -->
+          <ul class="navbar-nav flex-row d-none d-md-flex">
+            <li class="nav-item me-3 me-lg-1">
+              <a
+                class="nav-link d-flex"
+                href="https://easy-data.mdbgo.io/#section-google-sheets"
+                target="_blank"
+              >
+                <img
+                  src="image/logo.png"
+                  height="40"
+                  class="me-2"
+                  alt=""
+                />
+                <span style="display:flex;
+                            justify-content: center;
+                            align-items: center;       
+                ">Design & Program Ekskul</span>
+              </a>
+            </li>
+          </ul>
+          <!-- Center elements -->
 
-.main{
-    display: flex;
-}
+          <!-- Right elements -->
+          <ul class="navbar-nav flex-row d-none d-md-flex">
+            <li class="nav-item me-3 me-lg-1">
+              <a
+                href="https://mdbootstrap.com/"
+                target="_blank"
+                class="
+                  btn btn-success btn-rounded
+                  mx-2
+                  d-none d-lg-inline-block
+                "
+                ><i class="fas fa-cubes me-2"></i>Absensi Kehadiran</a
+              >
+            </li>
+          </ul>
+          <!-- Right elements -->
+        </div>
+      </nav>
+      <!-- Navbar -->
+    </header>
+    <!--Main Navigation-->
 
-.dropdown{
-    position: relative;
-    margin-top: 100px;
-    width: 300px;
-    height: 50px;
-}
+    <!--Main layout-->
+    <main>
+      <div class="container d-flex ms-1 mt-5">
+        <div class="dropdown">
+          <input type="text" class="text02" readonly placeholder="Bulan">
+          <div class="option">
+              <div class="januari">Januari</div>
+              <div class="februari">Februari</div>
+              <div class="maret">Maret</div>
+              <div class="april">April</div>
+              <div class="mei">Mei</div>
+              <div class="juni">Juni</div>
+              <div class="juli">Juli</div>
+              <div class="agustus">Agustus</div>
+              <div class="september">September</div>
+              <div class="oktober">Oktober</div>
+              <div class="november">November</div>
+              <div class="desember">Desember</div>
+          </div>
+        </div>
 
-.dropdown::before{
-    content: '';
-    position: absolute;
-    top: 25px;
-    right: 28px;
-    width: 12px;
-    height: 2px;
-    background: #555;
-    z-index: 10;
-    transform: rotate(40deg);
-    transition: 0.5s;
-}
+        <!-- Table -->
+        <table class="table">
+          <thead id="table-head"></thead>
+          <tbody id="table-body"></tbody>
+        </table>
+        <!-- Table -->
+      </div>
+    </main>
+    <!--Main layout-->
 
-.dropdown.active::before{
-    right: 20px;
-}
+    <!--Footer-->
+    <footer></footer>
+    <!--Footer-->
+  </body>
 
-.dropdown::after{
-    content: '';
-    position: absolute;
-    top: 25px;
-    right: 20px;
-    width: 12px;
-    height: 2px;
-    background: #555;
-    z-index: 10;
-    transform: rotate(-40deg);
-    transition: 0.5s;
-}
+  <!-- MDB ESSENTIAL -->
+  <script type="text/javascript" src="mdb.min.js"></script>
+  <!-- Google API -->
+  <script src="https://apis.google.com/js/api.js"></script>
+  <!-- easyData -->
+  <script type="text/javascript" src="easyData-google-sheets.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 
-.dropdown.active::after{
-    right: 28px;
-}
+  <!-- easyData - Creating table -->
+  <script>
+    {
+      {
+        // Your API KEY
+        const API_KEY = "AIzaSyDtAT6rqXDMoCEtccYq_7Zeos5wuroRc1Y";
 
-.dropdown input{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    border-radius: 10px;
-    padding: 12px 20px;
-    font-size: 16px;
-    background: #fff;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05) ;
-    outline: none;
-    border: none;
-}
+        function displayResult2(response) {
+          let tableHead = "";
+          let tableBody = "";
 
-.dropdown .option{
-    position: absolute;
-    top: 70px;
-    width: 100%;
-    background: #fff;
-    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05) ;
-    border-radius: 10px;
-    overflow: hidden;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.25s;
-}
+          response.result.values.forEach((row, index) => {
+            if (index === 0) {
+              tableHead += "<tr>";
+              row.forEach((val) => (tableHead += "<th>" + val + "</th>"));
+              tableHead += "</tr>";
+            } else {
+              tableBody += "<tr>";
+              row.forEach((val) => (tableBody += "<td>" + val + "</td>"));
+              tableBody += "</tr>";
+            }
+          });
 
-.dropdown.active .option{
-    visibility: visible;
-    opacity: 1;
-}
+          document.getElementById("table-head").innerHTML = tableHead;
+          document.getElementById("table-body").innerHTML = tableBody;
+        }
 
-.dropdown .option div{
-    padding: 10px 20px;
-    cursor: pointer;
-}
+        
 
-.dropdown .option div:hover{
-    background: #62baea;
-    color: #fff;
-}
+        function loadData() {
+          // Spreadsheet ID
+          const spreadsheetId = "1QQD1lnnA8l2BOpBQEGtV7ACjMRWQie_2MQlUC9LPx5E";
+          const range = "A:Z";
+          getPublicValues({ spreadsheetId, range }, displayResult2);
+        }
+
+        window.addEventListener("load", (e) => {
+          initOAuthClient({ apiKey: API_KEY });
+        });
+
+        document.addEventListener("gapi-loaded", (e) => {
+          loadData();
+        });
+      }
+    }
+  </script>
+</html>
