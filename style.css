@@ -11,7 +11,7 @@
 body{
     height: 100vh;
     width: 100%;
-    background: url(img/keyboards.jpg);
+    background: url(image/keyboards.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -193,7 +193,6 @@ body{
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    opacity: .3;
     background: #0f0;
     transform-style: preserve-3d;
     transform: rotateX(-30deg);
